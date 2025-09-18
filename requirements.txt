@@ -2,6 +2,6 @@ streamlit
 pandas 
 seaborn 
 numpy 
-sklearn 
+scikit-learn
 matplotlib 
 tabulate 
