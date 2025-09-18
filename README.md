@@ -1,4 +1,4 @@
-# 📊 Employee Satisfaction & Attrition Analysis Dashboard
+# Employee Satisfaction & Attrition Analysis Dashboard
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-v1.32.0-orange)
@@ -6,7 +6,7 @@
 
 A comprehensive HR analytics dashboard that analyzes employee satisfaction, identifies attrition risks, and provides actionable insights for talent retention strategies.
 
-## 🌟 Features
+## Features
 
 - **22 In-Depth Analyses**: Explore every aspect of employee satisfaction and attrition
 - **Interactive Dashboard**: Filter data by department and salary level in real-time
@@ -16,7 +16,7 @@ A comprehensive HR analytics dashboard that analyzes employee satisfaction, iden
 - **Export Functionality**: Generate and download comprehensive reports
 - **Complete Warning Suppression**: Clean output without distracting warnings
 
-## 📈 Key Business Insights
+## Key Business Insights
 
 - Identifies employees with **low satisfaction + high performance** - your most valuable at-risk talent
 - Reveals **department-specific attrition patterns** to target retention efforts
@@ -24,13 +24,13 @@ A comprehensive HR analytics dashboard that analyzes employee satisfaction, iden
 - Uncovers **optimal project loads** for maintaining employee satisfaction
 - Highlights **career stagnation periods** (3-5 years tenure) where attrition peaks
 
-## 🖥️ Live Demo
+## Live Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-streamlit-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://employeesatisfaction.streamlit.app/)
 
-*(Replace with your actual deployment URL)*
+**The above badge must open for you a GUI you could explore** 
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -40,8 +40,8 @@ A comprehensive HR analytics dashboard that analyzes employee satisfaction, iden
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/employee-satisfaction-analyzer.git
-cd employee-satisfaction-analyzer
+git clone https://github.com/Losif01/Employee-Satisfaction-Attrition-Analysis
+cd Employee-Satisfaction-Attrition-Analysis
 ```
 
 2. Install dependencies:
@@ -56,26 +56,44 @@ streamlit run app.py
 
 4. Open your browser to `http://localhost:8501`
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
-employee_satisfaction_analyzer/
-├── app.py                    # Main Streamlit application
-├── requirements.txt          # Dependencies
-├── analysis/                 # Core analysis modules
-│   ├── data_loader.py        # Data loading and preprocessing
-│   ├── metrics.py            # Key HR metrics calculation
-│   ├── clustering.py         # Employee segmentation
-│   ├── question_bank.py      # All 22 analysis questions
-│   └── visualizations/       # Custom visualization classes
-├── utils/                    # Utility functions
-│   ├── config.py             # Configuration settings
-│   └── logger.py             # Logging setup
-└── data/                     # Data files
-    └── Employee Attrition.csv
+.
+├── analysis
+│   ├── clustering.py
+│   ├── data_loader.py
+│   ├── __init__.py
+│   ├── metrics.py
+│   ├── question_bank.py
+│   └── visualizations
+│       ├── barplot.py
+│       ├── base.py
+│       ├── boxplot.py
+│       ├── cluster_plot.py
+│       ├── heatmap.py
+│       ├── histogram.py
+│       ├── __init__.py
+│       ├── kdeplot.py
+│       ├── scatterplot.py
+│       └── violinplot.py
+├── app.py
+├── data
+│   ├── Employee Attrition.csv
+│   ├── __init__.py
+│   └── Questions.txt
+├── README.md
+├── requirements.txt
+├── test.py
+└── utils
+    ├── config.py
+    ├── __init__.py
+    └── logger.py
+
+5 directories, 25 files
 ```
 
-## 🔍 How It Works
+##  How It Works
 
 The dashboard performs a comprehensive analysis of employee data through 22 interconnected questions that fall into these categories:
 
@@ -103,7 +121,7 @@ The dashboard performs a comprehensive analysis of employee data through 22 inte
 - Violin plots for distribution analysis
 - Multi-metric comparisons by salary
 
-## 🎯 Business Value
+##  Business Value
 
 This tool helps HR teams and business leaders:
 
@@ -113,17 +131,8 @@ This tool helps HR teams and business leaders:
 - **Enhance talent management** through personalized career development
 - **Validate HR initiatives** with measurable outcomes
 
-## 📤 Export & Reporting
 
-Generate comprehensive reports with:
-- Current filter settings
-- Key metrics summary
-- Selected analysis interpretation
-- Data sample
-
-Perfect for sharing with stakeholders and documenting findings.
-
-## 🛠️ Technical Architecture
+##  Technical Architecture
 
 Built with software engineering best practices:
 - **MVC-inspired design** for clean separation of concerns
@@ -132,11 +141,11 @@ Built with software engineering best practices:
 - **Configurable thresholds** for business rules
 - **Comprehensive error handling** for production readiness
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built using Streamlit for rapid dashboard development
 - Leveraging pandas and scikit-learn for data science operations
@@ -144,4 +153,31 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*Empowering organizations to retain their most valuable asset: people.* 💼✨
+*Empowering organizations to retain their most valuable asset: people.* 
+
+##  Contact Me
+
+Have questions about the project or interested in collaboration? Feel free to reach out!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile/)
+[![GitLab](https://img.shields.io/badge/GitLab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/skillIssueCM)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:losif.ai.2050@gmail.com)
+
+### Connect With Me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/yousef-fawzi/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="linkedin" width="40" height="40"/>
+  </a>
+    <a href="https://gitlab.com/skillIssueCM" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="gitlab" width="40" height="40"/>
+  </a>
+  <a href="mailto:losif.ai.2050@gmail.com" target="_blank">
+    <img src="https://imgs.search.brave.com/YjZyc-VnhgEy7ANjFgVM-SlrvLHkQ7FeRZU7_OtLHo8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c3ZncmVwby5jb20v/c2hvdy80NTIyMTMv/Z21haWwuc3Zn" alt="gmail" width="40" height="40"/>
+  </a>
+</p>
+
+**Email:** [losif.ai.2050@gmail.com](mailto:losif.ai.2050@gmail.com)  
+**LinkedIn:** [Yousef F.](https://www.linkedin.com/in/yousef-fawzi/)
+
+*Open to opportunities, collaborations, and discussions about data science, HR analytics, and machine learning applications in business.*
