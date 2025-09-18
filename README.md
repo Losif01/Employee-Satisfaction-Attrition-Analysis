@@ -3,6 +3,9 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-v1.32.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![Kaggle](https://github.com/spider-man-tm/kaggle-badges/raw/main/docs/images/badges/Contributor/flat-square-white.svg)
+
+Kaggle notebook link: [link](https://www.kaggle.com/code/losif01/data-analysis-on-employee-satisfaction) 
 
 A comprehensive HR analytics dashboard that analyzes employee satisfaction, identifies attrition risks, and provides actionable insights for talent retention strategies.
 
