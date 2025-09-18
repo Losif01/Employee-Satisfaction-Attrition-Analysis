@@ -172,41 +172,41 @@ st.markdown("---")
 st.markdown("""
 **Employee Satisfaction Analyzer** | 
 Built with ❤️ using Streamlit | 
-[Source Code](https://github.com/yourusername/employee-satisfaction-analyzer)
+[Source Code](https://github.com/Losif01/Employee-Satisfaction-Attrition-Analysis)
 """)
 
-# Add export functionality
-if st.sidebar.button("📥 Export Report"):
-    try:
-        # Get current analysis result
-        analysis_func = getattr(QuestionBank, selected_question)
-        result = analysis_func(st.session_state.filtered_df)
+# # Add export functionality
+# if st.sidebar.button("📥 Export Report"):
+#     try:
+#         # Get current analysis result
+#         analysis_func = getattr(QuestionBank, selected_question)
+#         result = analysis_func(st.session_state.filtered_df)
         
-        report = f"""
-        EMPLOYEE SATISFACTION ANALYSIS REPORT
-        Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
+#         report = f"""
+#         EMPLOYEE SATISFACTION ANALYSIS REPORT
+#         Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
         
-        FILTERS APPLIED:
-        - Departments: {', '.join(selected_depts)}
-        - Salary Levels: {', '.join(selected_salaries)}
+#         FILTERS APPLIED:
+#         - Departments: {', '.join(selected_depts)}
+#         - Salary Levels: {', '.join(selected_salaries)}
         
-        KEY METRICS:
-        - Total Employees: {len(st.session_state.filtered_df)}
-        - Attrition Rate: {attrition_rate:.1%}
-        - High-Risk Employees: {len(high_risk)} ({len(high_risk)/len(st.session_state.filtered_df):.1%})
+#         KEY METRICS:
+#         - Total Employees: {len(st.session_state.filtered_df)}
+#         - Attrition Rate: {attrition_rate:.1%}
+#         - High-Risk Employees: {len(high_risk)} ({len(high_risk)/len(st.session_state.filtered_df):.1%})
         
-        SELECTED ANALYSIS: {result['metadata']['title']}
-        {result['interpretation']}
+#         SELECTED ANALYSIS: {result['metadata']['title']}
+#         {result['interpretation']}
         
-        DATA SAMPLE:
-        {st.session_state.filtered_df.head().to_markdown(index=False)}
-        """
+#         DATA SAMPLE:
+#         {st.session_state.filtered_df.head().to_markdown(index=False)}
+#         """
         
-        st.sidebar.download_button(
-            label="Download Report",
-            data=report,
-            file_name=f"employee_analysis_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.txt",
-            mime="text/plain"
-        )
-    except Exception as e:
-        st.sidebar.error(f"Report generation error: {str(e)}")
+#         st.sidebar.download_button(
+#             label="Download Report",
+#             data=report,
+#             file_name=f"employee_analysis_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.txt",
+#             mime="text/plain"
+#         )
+#     except Exception as e:
+#         st.sidebar.error(f"Report generation error: {str(e)}")
